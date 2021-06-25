@@ -1,8 +1,5 @@
 package com.am.proengine.model;
 
-import lombok.Data;
-
-@Data
 public class CartDetails {
 	
 	private final String skuId;
@@ -12,5 +9,15 @@ public CartDetails(final String skuId, final int count) {
 		this.skuId =skuId;
 		this.count =count;
 	}
+
+public String getSkuId() {
+	return skuId;
+}
+
+public int getCount() {
+	return count;
+}
+
+
 
 }

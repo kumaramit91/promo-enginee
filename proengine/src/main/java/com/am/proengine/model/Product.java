@@ -1,5 +1,11 @@
 package com.am.proengine.model;
 
-public class Product {
+import lombok.Data;
 
+@Data
+public class Product {
+	
+	private  String skuId;
+	private  double price;
+	
 }

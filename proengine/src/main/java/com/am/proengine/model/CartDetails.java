@@ -1,5 +1,9 @@
 package com.am.proengine.model;
 
-public class CartDetails {
+import lombok.Data;
 
+@Data
+public class CartDetails {
+String skuId;
+int count;
 }

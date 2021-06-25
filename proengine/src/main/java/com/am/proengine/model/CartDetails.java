@@ -4,6 +4,13 @@ import lombok.Data;
 
 @Data
 public class CartDetails {
-String skuId;
-int count;
+	
+	private final String skuId;
+	private final int count;
+	
+public CartDetails(final String skuId, final int count) {
+		this.skuId =skuId;
+		this.count =count;
+	}
+
 }

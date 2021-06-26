@@ -1,5 +1,6 @@
 package com.am.proengine.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
@@ -12,7 +13,15 @@ public class ActivePromotionServiceImpl implements ActivePromotionService{
 	@Override
 	public List<ActivePromotion> getActivePromotions() {
 		// TODO Auto-generated method stub
-		return null;
+		return new ArrayList<>();
+	}
+
+	@Override
+	public void updateActivePromotions(ActivePromotion activePromotion) {
+		// TODO Auto-generated method stub
+		
+	//logic to update rules
+		
 	}
 
 }

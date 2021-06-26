@@ -32,8 +32,16 @@ private ProductService productService;
 		
 	}
 	
+
+	
 	@PostMapping("/totalPrice")
 	public double getProductsTotalPrice(@RequestBody final List<CartDetails> cartDetails){
+		
+		/*Input:
+		 * [ { "skuId": "A", "count": 3 }, { "skuId": "B", "count": 5 }, { "skuId": "C",
+		 * "count": 1 }, { "skuId": "D", "count": 1 } ]
+		 * OP:280.0
+		 */	
 		return productService.getProductsTotalPrice(cartDetails);
 		
 	}
